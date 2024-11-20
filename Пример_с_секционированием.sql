@@ -1,20 +1,20 @@
 ﻿
 --Сначала требуется ввести данные о пути к папкам, и после чего запускать.
 declare                                          --------------------------------------------
- @Magaz_DB_Root        nvarchar(400) =  'd:\Repa\BD_Magaz\Magaz_DB_Root\'     +  'Magaz_DB_Root.mdf'               -- Папка для  Magaz_DB_Root
-,@Customers_Data_1     nvarchar(400) =  'd:\Repa\BD_Magaz\Costomers_Group\'   +  'Customers_Data_1.ndf'            -- Одна папка для двух файлов
-,@Customers_Data_2     nvarchar(400) =  'd:\Repa\BD_Magaz\Costomers_Group\'   +  'Customers_Data_2.ndf'            -- Costomers_Group
-,@Product_Data_1	   nvarchar(400) =  'd:\Repa\BD_Magaz\Products_Group\'    +  'Product_Data_1.ndf'              -- Одна папка для двух файлов
-,@Product_Data_2	   nvarchar(400) =  'd:\Repa\BD_Magaz\Products_Group\'    +  'Product_Data_2.ndf'	           -- Products_Group
-,@Orders_Data_1	       nvarchar(400) =  'd:\Repa\BD_Magaz\Orders_Group\'      +  'Orders_Data_1.ndf'               -- Одна папка для двух файлов
-,@Orders_Data_2	       nvarchar(400) =  'd:\Repa\BD_Magaz\Orders_Group\'      +  'Orders_Data_2.ndf'	           -- Orders_Group
-,@Employee_Data_1	   nvarchar(400) =  'd:\Repa\BD_Magaz\Employee_Group\'    +  'Employee_Data_1.ndf'             -- Одна папка для двух файлов
-,@Employee_Data_2	   nvarchar(400) =  'd:\Repa\BD_Magaz\Employee_Group\'    +  'Employee_Data_2.ndf'	           -- Employee_Group
-,@Log_Data             nvarchar(400) =  'd:\Repa\BD_Magaz\Log_Data\'          +  'Log_Data.ldf'                    -- Папка для  Log_Data
+ @Magaz_DB_Root        nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Magaz_DB_Root\'     +  'Magaz_DB_Root.mdf'               -- Папка для  Magaz_DB_Root
+,@Customers_Data_1     nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Costomers_Group\'   +  'Customers_Data_1.ndf'            -- Одна папка для двух файлов
+,@Customers_Data_2     nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Costomers_Group\'   +  'Customers_Data_2.ndf'            -- Costomers_Group
+,@Product_Data_1	   nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Products_Group\'    +  'Product_Data_1.ndf'              -- Одна папка для двух файлов
+,@Product_Data_2	   nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Products_Group\'    +  'Product_Data_2.ndf'	           -- Products_Group
+,@Orders_Data_1	       nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Orders_Group\'      +  'Orders_Data_1.ndf'               -- Одна папка для двух файлов
+,@Orders_Data_2	       nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Orders_Group\'      +  'Orders_Data_2.ndf'	           -- Orders_Group
+,@Employee_Data_1	   nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Employee_Group\'    +  'Employee_Data_1.ndf'             -- Одна папка для двух файлов
+,@Employee_Data_2	   nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Employee_Group\'    +  'Employee_Data_2.ndf'	           -- Employee_Group
+,@Log_Data             nvarchar(400) =  'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\Log_Data\'          +  'Log_Data.ldf'                    -- Папка для  Log_Data
                                          --------------------------------------------    
 --Потом введите данные о секционировании, и о файловойгруппе для него. Так же путь к папке где он будет хронится
  declare 
- @ID_Employee_Audit_PARTITION  nvarchar(400) = 'd:\Repa\BD_Magaz\PARTITION\'  +  'ID_Employee_Audit_PARTITION.ndf' -- Папка для одного файла
+ @ID_Employee_Audit_PARTITION  nvarchar(400) = 'd:\Программы\БД\Моя база данных\2024\Более новая БД\Настройка реплики\PARTITION\'  +  'ID_Employee_Audit_PARTITION.ndf' -- Папка для одного файла
 
 
 
